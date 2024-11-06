@@ -1,0 +1,253 @@
+.wallet {
+  /* Device=Website */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 18px;
+
+  width: 353px;
+  height: 162px;
+
+  /* Base/White */
+  background: #ffffff;
+  /* Neutral/40
+
+Border. divider
+*/
+  border: 1px solid #e2e8f0;
+  /* Shadow-1 */
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 6px;
+
+  &__header {
+    /* Wallet Header */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 305px;
+    height: 58px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    &__group {
+      /* Icon + Title */
+
+      /* Auto layout */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 12px;
+
+      width: 305px;
+      height: 32px;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+
+      &__icon {
+        padding: 5.5px 7px;
+
+        background: #eff2f6;
+        border-radius: 1000px;
+      }
+
+      &__text {
+        /* Emergency fund */
+
+        /* L/Semibold */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        /* or 133% */
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+
+        /* Neutral/90 */
+        color: #344055;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+      }
+    }
+
+    &__text {
+      /* Last Paid on August 28, 2022 */
+
+      /* XS/Regular */
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      /* Neutral/70 */
+      color: #79808a;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+  }
+
+  &__status {
+    /* Progress Status */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    width: 305px;
+    height: 38px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    &__progress-info {
+      /* Progress Information */
+
+      /* Auto layout */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0px;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+
+      &__text-left {
+        /* $300 / $1000 */
+
+        /* L/Regular */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height, or 133% */
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: -0.02em;
+
+        /* Violet/Main - 500 */
+        color: #4f46e5;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        &__child {
+          margin-left: 4px;
+          color: #b8b6f7;
+        }
+      }
+
+      &__text-right {
+        /* Nominal */
+
+        /* Text sm/Regular */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+
+        /* Neutral/80 */
+        color: #5b6776;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+      }
+    }
+
+    &__progress-visual {
+      /* Progress Visual */
+
+      /* Auto layout */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 8px;
+
+      width: 305px;
+      height: 10px;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+
+      &__progress-bar {
+        /* Progress bar */
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+
+        &__progress {
+          /* Progress */
+
+          width: 30%;
+          height: 10px;
+
+          /* Violet/Main - 500 */
+          background: #4f46e5;
+          border-radius: 6px;
+        }
+
+        &__background {
+          /* Background */
+
+          height: 10px;
+
+          /* Violet/200 */
+          background: #f7f8fd;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.side-navbar {
+  /* Side Navbar */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 18px 32px;
+  gap: 48px;
+
+  /* Base/Black */
+  background: #080325;
+
+  &__header {
+    /* Header */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    width: 100%;
+
+    &__group {
+      /* Logo + icon */
+
+      /* Auto layout */
+      padding: 24px 0px;
+      gap: 52px;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+
+    &__main {
+      /* Main Navigation */
+
+      /* Auto layout */
+      padding: 0px;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+
+      width: 100%;
+    }
+  }
+
+  &__footer {
+    /* Footer */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Violet/SN Default - 900 */
+    background: #080325;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    &__item {
+      /* Side navigation item */
+
+      /* Auto layout */
+
+      /* Base/Black */
+      background: #080325;
+      border-radius: 4px;
+
+      /* Inside auto layout */
+      width: 100%;
+    }
+  }
+}

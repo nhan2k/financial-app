@@ -1,0 +1,43 @@
+.table-cell {
+  /* Type=Text */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 16px;
+  gap: 4px;
+
+  width: 183px;
+  height: 64px;
+
+  /* Neutral/10
+
+FFFFFF
+*/
+  background: #ffffff;
+
+  &__text {
+    /* Name */
+
+    width: 151px;
+    height: 24px;
+
+    /* M/Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: -0.01em;
+
+    /* Neutral/90 */
+    color: #344055;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+}
