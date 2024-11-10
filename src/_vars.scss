@@ -1,0 +1,93 @@
+$font-family: 'Inter';
+
+// Typography sizes and line heights
+$font-size-xxs: 12px;
+$line-height-xxs: 18px;
+
+$font-size-xs: 14px;
+$line-height-xs: 20px;
+
+$font-size-s: 16px;
+$line-height-s: 24px;
+
+$font-size-m: 18px;
+$line-height-m: 24px;
+
+$font-size-l: 24px;
+$line-height-l: 30px;
+
+$font-size-xl: 32px;
+$line-height-xl: 40px;
+
+// Font weights
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Example usage in mixins for responsive typography
+@mixin font-style($size, $line-height, $weight: $font-weight-regular) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+
+// Usage example
+.title-xxs {
+  @include font-style($font-size-xxs, $line-height-xxs, $font-weight-semibold);
+}
+
+.title-xs {
+  @include font-style($font-size-xs, $line-height-xs, $font-weight-semibold);
+}
+
+.text-small {
+  @include font-style($font-size-s, $line-height-s, $font-weight-regular);
+}
+
+// Define more styles as needed using the mixin above
+
+// Grayscale colors
+$color-white: #ffffff;
+$color-black: #080325;
+$color-gray-10: #f9f9f9;
+$color-gray-20: #f2f2f2;
+$color-gray-30: #e5e5e5;
+$color-gray-40: #cccccc;
+$color-gray-50: #b3b3b3;
+$color-gray-60: #999999;
+$color-gray-70: #808080;
+$color-gray-80: #666666;
+$color-gray-90: #4d4d4d;
+$color-gray-100: #333333;
+
+// Primary colors (example, add others as needed)
+$color-primary-100: #e8f4ff;
+$color-primary-200: #c6e1ff;
+$color-primary-300: #93c6ff;
+$color-primary-400: #60a9ff;
+$color-primary-500: #2d8cff;
+$color-primary-600: #006edb;
+$color-primary-700: #0054b0;
+$color-primary-800: #003985;
+$color-primary-900: #001f5a;
+
+// Success colors
+$color-success-100: #e6f6ed;
+$color-success-200: #b8e5ca;
+$color-success-300: #7bd3a7;
+$color-success-400: #43c18b;
+$color-success-500: #00a97c;
+$color-success-600: #008a63;
+$color-success-700: #006b4a;
+$color-success-800: #004d30;
+$color-success-900: #002f17;
+
+// Additional colors (add others similarly based on your image)
+$color-sweet-orange-bg: #ffb382;
+$color-cherry-bg: #e60023;
+$color-aster-bg: #0054b2;
+$color-wisteria-bg: #b59ce4;
+$color-turquoise-bg: #1abc9c;
+
+// Color default
+$icon-color-default: #64748b;

@@ -1,0 +1,129 @@
+.my-wallet {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__infomation-action {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 16px 24px 44px;
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow:
+        0px 1px 3px rgba(16, 24, 40, 0.1),
+        0px 1px 2px rgba(16, 24, 40, 0.06);
+      border-radius: 6px;
+
+      &__user-setting {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &__user {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 32px;
+
+          /* Neutral/100 */
+          color: #121212;
+          margin: auto 0;
+        }
+
+        > ng-icon {
+          cursor: pointer;
+        }
+      }
+
+      &__money {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+
+        /* Neutral/90 */
+        color: #344055;
+      }
+    }
+
+    &__action {
+      width: 100%;
+      display: flex;
+      background-color: #e3e8ef;
+      border: 1px solid #e2e8f0;
+      box-shadow:
+        0px 1px 3px rgba(16, 24, 40, 0.1),
+        0px 1px 2px rgba(16, 24, 40, 0.06);
+      border-radius: 6px;
+      gap: 2px;
+
+      &__payment {
+        width: 100%;
+        padding: 30px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #ffffff;
+
+        &__button {
+          background: #f7f8fd;
+          border-radius: 1000px;
+          outline: none;
+          border: 0;
+          cursor: pointer;
+
+          > img {
+            padding: 10px 12px;
+          }
+        }
+
+        &__text {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          color: #344055;
+        }
+      }
+    }
+  }
+
+  &__all-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    & > app-wallet {
+      flex: 0 1 calc(33.33% - 16px); // Subtract the gap to fit three cards
+      box-sizing: border-box; // Ensure padding and border are included in the width
+    }
+  }
+
+  &__create {
+    align-items: center;
+    width: 100%;
+    background: #f7f8fd;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+
+    &__text {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: #4f46e5;
+    }
+  }
+}

@@ -1,20 +1,15 @@
-.side-navbar {
-  /* Side Navbar */
+@import '../../../../vars';
 
-  /* Auto layout */
+.side-navbar {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 18px 32px;
   gap: 48px;
-
-  /* Base/Black */
   background: #080325;
+  height: calc(100vh - 32px);
 
   &__header {
-    /* Header */
-
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -26,18 +21,32 @@
     flex-grow: 1;
     width: 100%;
 
-    &__group {
-      /* Logo + icon */
-
-      /* Auto layout */
-      padding: 24px 0px;
-      gap: 52px;
-
-      /* Inside auto layout */
+    &__top-navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 20px;
       flex: none;
       order: 0;
       align-self: stretch;
       flex-grow: 0;
+
+      &__logo {
+        &__text {
+          font-family: 'Inter';
+          font-style: italic;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 29px;
+          letter-spacing: -0.04em;
+          color: #ffffff;
+        }
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
     }
 
     &__main {
@@ -84,6 +93,13 @@
 
       /* Inside auto layout */
       width: 100%;
+    }
+
+    &__divider {
+      width: 100%;
+      max-height: 1px;
+      height: 1px;
+      background: #344055;
     }
   }
 }

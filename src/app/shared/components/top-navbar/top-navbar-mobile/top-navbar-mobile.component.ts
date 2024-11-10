@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroBars3BottomRightMini } from '@ng-icons/heroicons/mini';
 
@@ -8,14 +8,11 @@ import { heroBars3BottomRightMini } from '@ng-icons/heroicons/mini';
   imports: [NgIconComponent],
   templateUrl: './top-navbar-mobile.component.html',
   styleUrl: './top-navbar-mobile.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [
     provideIcons({
       heroBars3BottomRightMini,
     }),
   ],
 })
-export class TopNavbarMobileComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class TopNavbarMobileComponent {}

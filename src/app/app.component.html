@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<div class="layout">
+  <div class="layout__sidebar">
+    <app-side-navbar></app-side-navbar>
+  </div>
+  <div class="layout__body">
+    <app-top-navbar-web></app-top-navbar-web>
+    <div class="layout__body__content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

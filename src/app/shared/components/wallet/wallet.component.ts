@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroWalletSolid } from '@ng-icons/heroicons/solid';
 
@@ -8,6 +8,7 @@ import { heroWalletSolid } from '@ng-icons/heroicons/solid';
   imports: [NgIconComponent],
   templateUrl: './wallet.component.html',
   styleUrl: './wallet.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [
     provideIcons({
       heroWalletSolid,

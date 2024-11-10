@@ -1,24 +1,26 @@
 <div class="side-navbar">
   <div class="side-navbar__header">
-    <div class="side-navbar__header__group">
-      <app-top-navbar-mobile></app-top-navbar-mobile>
+    <div class="side-navbar__header__top-navbar">
+      <div class="side-navbar__header__top-navbar__logo">
+        <img src="logo.svg" alt="logo" width="24px" />
+        <p class="side-navbar__header__top-navbar__logo__text">Ringku</p>
+      </div>
+      <app-button [config]="buttonConfig"></app-button>
     </div>
     <div class="side-navbar__header__main">
-      <app-side-navigation-item></app-side-navigation-item>
-      <app-side-navigation-item></app-side-navigation-item>
-      <app-side-navigation-item></app-side-navigation-item>
-      <app-side-navigation-item></app-side-navigation-item>
+      @for (item of itemsHeader; track $index) {
+      <app-side-navigation-item [item]="item" [sign]="item?.sign"></app-side-navigation-item>
+      }
     </div>
   </div>
   <div class="side-navbar__footer">
+    @for (item of itemsFooter; track $index) {
     <div class="side-navbar__footer__item">
-      <app-side-navigation-item></app-side-navigation-item>
+      <app-side-navigation-item [item]="item"></app-side-navigation-item>
     </div>
-
-    <!-- Divider -->
-
-    <div class="side-navbar__footer__item">
-      <app-side-navigation-item></app-side-navigation-item>
-    </div>
+    @if ($index!==1) {
+    <div class="side-navbar__footer__divider"></div>
+    }
+    }
   </div>
 </div>

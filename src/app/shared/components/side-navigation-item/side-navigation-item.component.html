@@ -1,11 +1,15 @@
-<div class="side-navigation-item">
+@if (item) {
+<div class="side-navigation-item" [routerLink]="[item.link]" routerLinkActive="router-link-active">
   <div class="side-navigation-item__content">
     <div class="side-navigation-item__content__group">
-      <ng-icon name="heroChatBubbleOvalLeftEllipsisSolid" size="26" color="#fff"></ng-icon>
-      <p class="side-navigation-item__content__group__text">Chat</p>
+      <ng-icon [name]="item.icon" size="26" color="#fff"></ng-icon>
+      <p class="side-navigation-item__content__group__text">{{item.label}}</p>
     </div>
+    @if (sign) {
     <div class="side-navigation-item__content__notification-sign">
-      <p class="side-navigation-item__content__notification-sign__value">12</p>
+      <p class="side-navigation-item__content__notification-sign__value">{{sign}}</p>
     </div>
+    }
   </div>
 </div>
+}

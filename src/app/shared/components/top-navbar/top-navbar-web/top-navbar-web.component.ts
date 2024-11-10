@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import {
-  heroInboxSolid,
   heroArrowsPointingOutSolid,
+  heroInboxSolid,
   heroQuestionMarkCircleSolid,
 } from '@ng-icons/heroicons/solid';
 
@@ -12,6 +12,7 @@ import {
   imports: [NgIconComponent],
   templateUrl: './top-navbar-web.component.html',
   styleUrl: './top-navbar-web.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [
     provideIcons({
       heroInboxSolid,
@@ -20,8 +21,4 @@ import {
     }),
   ],
 })
-export class TopNavbarWebComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class TopNavbarWebComponent {}

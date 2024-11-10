@@ -1,48 +1,84 @@
 .button {
-  /* State=Default, Variant=Primary, Type=Icon Text, Size=Big */
-
-  /* Auto layout */
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 12px 24px;
-  gap: 8px;
-
+  align-items: center;
   outline: none;
-
-  /* Violet/Main - 500 */
-  background: #4f46e5;
-  /* Shadow-1 */
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 1000px;
   border: none;
+  gap: 8px;
 
-  &__text {
-    /* Add */
-
-    /* L/Semibold */
+  > p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    /* identical to box height, or 133% */
-    letter-spacing: -0.02em;
-
-    /* Neutral/10 */
-    color: #ffffff;
-
-    /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
   }
 
-  &:hover {
-    /* State=Hover, Variant=Primary, Type=Icon Text, Size=Big */
-    /* Violet/Hover - 600 */
-    background: #473fce;
-    /* Shadow-1 */
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  &.outline {
+    background-color: #ffffff;
+
+    > p {
+      color: #79808a;
+    }
+
+    &:hover {
+      background-color: #f8fafc;
+    }
+  }
+
+  &.primary {
+    background-color: #4f46e5;
+
+    > p {
+      color: #ffffff;
+    }
+
+    &:hover {
+      background: #473fce;
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    }
+  }
+
+  &.text-only {
+    > ng-icon {
+      display: none;
+    }
+  }
+
+  &.icon-only {
+    > p {
+      display: none;
+    }
+  }
+
+  &.big {
+    padding: 12px 24px;
+
+    &.icon-only {
+      padding: 12px;
+    }
+
+    > p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &.small {
+    padding: 8px 16px;
+
+    &.icon-only {
+      padding: 12px;
+    }
+
+    > p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &.main {
+    background-color: #191a38;
   }
 }

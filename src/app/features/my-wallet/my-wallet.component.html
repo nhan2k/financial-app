@@ -1,0 +1,41 @@
+<app-content-header [content]="contentHeader"></app-content-header>
+<div class="my-wallet">
+  <div class="my-wallet__infomation-action">
+    <div class="my-wallet__infomation-action__info">
+      <div class="my-wallet__infomation-action__info__user-setting">
+        <p class="my-wallet__infomation-action__info__user-setting__user">Hi Adrian!</p>
+        <ng-icon [name]="'heroEllipsisVerticalSolid'" size="40"></ng-icon>
+      </div>
+      <div class="my-wallet__infomation-action__info__money">
+        $124,543
+      </div>
+    </div>
+    <div class="my-wallet__infomation-action__action">
+      <div class="my-wallet__infomation-action__action__payment">
+        <button class="my-wallet__infomation-action__action__payment__button">
+          <img src="/assets/icons/send-payment.svg" alt="">
+        </button>
+        <p class="my-wallet__infomation-action__action__payment__text">
+          Send a payment
+        </p>
+      </div>
+      <div class="my-wallet__infomation-action__action__payment">
+        <button class="my-wallet__infomation-action__action__payment__button">
+          <img src="/assets/icons/request-payment.svg" alt="">
+        </button>
+        <p class="my-wallet__infomation-action__action__payment__text">
+          Request a payment
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="my-wallet__all-cards">
+    @for (item of walletCards; track $index) {
+    <app-wallet></app-wallet>
+    }
+  </div>
+  <div class="my-wallet__create">
+    <app-button [config]="createBtnConfig"></app-button>
+    <p class="my-wallet__create__text">Create New Wallet</p>
+  </div>
+</div>
