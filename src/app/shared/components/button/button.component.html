@@ -1,5 +1,5 @@
 <button [class]="transformType()" [type]="config?.type">
   <ng-icon [name]="config?.icon" [size]="transformSize()"
     [color]="config?.order ==='Primary' ? '#ffffff' : '#79808a'"></ng-icon>
-  <p>Add</p>
+  <p>{{config?.text}}</p>
 </button>

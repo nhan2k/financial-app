@@ -1,6 +1,10 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
-import { heroPlusSolid, heroBars3Solid } from '@ng-icons/heroicons/solid';
+import {
+  heroPlusSolid,
+  heroBars3Solid,
+  heroArrowRightSolid,
+} from '@ng-icons/heroicons/solid';
 import {
   ButtonContent,
   ButtonOrder,
@@ -20,6 +24,7 @@ import { ButtonClassPipe } from '../../pipes/button/button-class.pipe';
     provideIcons({
       heroPlusSolid,
       heroBars3Solid,
+      heroArrowRightSolid,
     }),
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,

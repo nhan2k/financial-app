@@ -1,2 +1,76 @@
-<app-content-header></app-content-header>
-<p>my-card works!</p>
+<app-content-header [content]="contentHeader"></app-content-header>
+<div class="my-card">
+  <div class="my-card__card-info">
+    <app-selection></app-selection>
+    <div class="my-card__card-info__credit">
+      <div class="my-card__card-info__credit__card">
+        <img src="assets/icons/credit-card.svg" alt="">
+      </div>
+      <div class="my-card__card-info__credit__info">
+        <p>Card Information</p>
+        <div class="my-card__card-info__credit__info__info">
+          <div class="my-card__card-info__credit__info__info__group">
+            <p>Card No.</p>
+            <p>4889 9271 1937 1932</p>
+          </div>
+          <div class="my-card__card-info__credit__info__info__group">
+            <p>Expiry date</p>
+            <p>12/28</p>
+          </div>
+          <div class="my-card__card-info__credit__info__info__group">
+            <p>CVV (3-digit security code)</p>
+            <p>***</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-card__card-info__personalize">
+      <p>See how we can personalize your account:</p>
+      <app-button [config]="config"></app-button>
+    </div>
+  </div>
+  <div class="my-card__feature">
+    <div class="my-card__feature__title">
+      <p>See Our Help</p>
+      <ng-icon name="heroEllipsisVerticalSolid" size="24"></ng-icon>
+    </div>
+    <div class="my-card__feature__feature-col">
+      <div class="my-card__feature__feature-col__cell">
+        <div class="my-card__feature__feature-col__cell__content">
+          <p>Check Your Cash Flow</p>
+          <ng-icon name="heroChevronRightSolid" size="18"></ng-icon>
+        </div>
+        <div class="my-card__feature__feature-col__cell__divider"></div>
+      </div>
+      <div class="my-card__feature__feature-col__cell">
+        <div class="my-card__feature__feature-col__cell__content">
+          <p>Change Primary Card</p>
+          <ng-icon name="heroChevronRightSolid" size="18"></ng-icon>
+        </div>
+        <div class="my-card__feature__feature-col__cell__divider"></div>
+      </div>
+      <div class="my-card__feature__feature-col__cell">
+        <div class="my-card__feature__feature-col__cell__content">
+          <p>Pay Tax</p>
+          <ng-icon name="heroChevronRightSolid" size="18"></ng-icon>
+        </div>
+        <div class="my-card__feature__feature-col__cell__divider"></div>
+      </div>
+      <div class="my-card__feature__feature-col__cell">
+        <div class="my-card__feature__feature-col__cell__content">
+          <p>Make Invoice</p>
+          <ng-icon name="heroChevronRightSolid" size="18"></ng-icon>
+        </div>
+        <div class="my-card__feature__feature-col__cell__divider"></div>
+      </div>
+      <div class="my-card__feature__feature-col__cell">
+        <div class="my-card__feature__feature-col__cell__content">
+          <p>Refer a Friend</p>
+          <ng-icon name="heroChevronRightSolid" size="18"></ng-icon>
+        </div>
+        <div class="my-card__feature__feature-col__cell__divider"></div>
+      </div>
+    </div>
+    <app-button [config]="configLookMore"></app-button>
+  </div>
+</div>

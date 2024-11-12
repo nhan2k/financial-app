@@ -1,12 +1,14 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroInformationCircleSolid } from '@ng-icons/heroicons/solid';
+import { ButtonConfig } from '../../models/interfaces/button';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-panel',
   standalone: true,
-  imports: [ButtonComponent, NgIconComponent],
+  imports: [ButtonComponent, NgIconComponent, CommonModule],
   templateUrl: './panel.component.html',
   styleUrl: './panel.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -16,4 +18,6 @@ import { heroInformationCircleSolid } from '@ng-icons/heroicons/solid';
     }),
   ],
 })
-export class PanelComponent {}
+export class PanelComponent {
+  @Input() config?: ButtonConfig;
+}

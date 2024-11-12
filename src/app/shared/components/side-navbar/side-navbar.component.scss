@@ -6,7 +6,7 @@
   align-items: flex-start;
   padding: 0px 18px 32px;
   gap: 48px;
-  background: #080325;
+  background-color: #080325;
   height: calc(100vh - 32px);
 
   &__header {
@@ -74,7 +74,7 @@
     padding: 0px;
 
     /* Violet/SN Default - 900 */
-    background: #080325;
+    background-color: #080325;
 
     /* Inside auto layout */
     flex: none;
@@ -88,7 +88,7 @@
       /* Auto layout */
 
       /* Base/Black */
-      background: #080325;
+      background-color: #080325;
       border-radius: 4px;
 
       /* Inside auto layout */
@@ -99,7 +99,7 @@
       width: 100%;
       max-height: 1px;
       height: 1px;
-      background: #344055;
+      background-color: #344055;
     }
   }
 }

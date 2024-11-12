@@ -11,4 +11,5 @@ export interface ButtonConfig {
   order: ButtonOrder;
   type: ButtonType;
   icon?: string;
+  text?: string;
 }

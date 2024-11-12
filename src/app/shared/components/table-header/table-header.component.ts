@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-table-header',
@@ -8,4 +8,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './table-header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TableHeaderComponent {}
+export class TableHeaderComponent {
+  @Input() name?: string;
+}

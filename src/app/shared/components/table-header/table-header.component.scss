@@ -1,41 +1,17 @@
 .table-header {
-  /* Type=Text */
-
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 16px;
   gap: 4px;
-
-  width: 183px;
-
-  /* Neutral/20
-
-Second base color, hover
-*/
-  background: #f8fafc;
+  width: 100%;
+  background-color: #f8fafc;
 
   &__text {
-    /* Name */
-
-    width: 151px;
-
-    /* M/Semibold */
-    font-family: 'Inter';
-    font-style: normal;
+    width: 100%;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-    letter-spacing: -0.01em;
-
-    /* Neutral/70 */
     color: #79808a;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
   }
 }

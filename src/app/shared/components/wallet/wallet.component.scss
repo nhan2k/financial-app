@@ -11,7 +11,7 @@
   gap: 18px;
 
   /* Base/White */
-  background: #ffffff;
+  background-color: #ffffff;
   /* Neutral/40
 
 Border. divider
@@ -56,7 +56,7 @@ Border. divider
       &__icon {
         padding: 5.5px 7px;
 
-        background: #eff2f6;
+        background-color: #eff2f6;
         border-radius: 1000px;
       }
 
@@ -218,7 +218,7 @@ Border. divider
           width: 30%;
 
           /* Violet/Main - 500 */
-          background: #4f46e5;
+          background-color: #4f46e5;
           border-radius: 6px;
         }
 
@@ -226,7 +226,7 @@ Border. divider
           /* Background */
 
           /* Violet/200 */
-          background: #f7f8fd;
+          background-color: #f7f8fd;
           border-radius: 6px;
         }
       }

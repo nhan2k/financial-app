@@ -13,6 +13,7 @@ import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { provideNgIconLoader } from '@ng-icons/core';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -26,5 +27,6 @@ export const appConfig: ApplicationConfig = {
       const http = inject(HttpClient);
       return http.get(`/assets/icons/${name}.svg`, { responseType: 'text' });
     }),
+    provideCharts(withDefaultRegisterables()),
   ],
 };

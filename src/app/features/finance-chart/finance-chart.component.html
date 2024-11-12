@@ -1,1 +1,6 @@
-<p>finance-chart works!</p>
+<app-content-header [content]="contentHeader"></app-content-header>
+<app-panel></app-panel>
+<div class="finance-chart">
+  <canvas baseChart [data]="lineChartData" [options]="lineChartOptions" [type]="lineChartType"
+    (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" height="100"></canvas>
+</div>

@@ -1,1 +1,28 @@
-<p>recent-transactions works!</p>
+<app-content-header [content]="contentHeader"></app-content-header>
+<table>
+  <tr>
+    <th>
+      <app-table-header [name]="'Transactions ID'"></app-table-header>
+    </th>
+    <th>
+      <app-table-header [name]="'Name'"></app-table-header>
+    <th>
+      <app-table-header [name]="'Date'"></app-table-header>
+    </th>
+    <th>
+      <app-table-header [name]="'Status'"></app-table-header>
+    </th>
+    <th>
+      <app-table-header [name]="'Amout'"></app-table-header>
+    </th>
+  </tr>
+  <tr>
+    <td>962296152</td>
+    <td>Sherman Blankenship</td>
+    <td>08 Jan, 2022</td>
+    <td>Pending</td>
+    <td>$217.90</td>
+  </tr>
+</table>
+
+<app-button [config]="createBtnConfig"></app-button>

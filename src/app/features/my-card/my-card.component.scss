@@ -1,0 +1,136 @@
+.my-card {
+  display: flex;
+  gap: 24px;
+
+  &__card-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+
+    &__credit {
+      padding: 18px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        > p {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 24px;
+          color: #121212;
+        }
+
+        &__info {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #344055;
+          }
+
+          &__group {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+
+    &__personalize {
+      background-color: #f7f8fd;
+      padding: 24px 18px 14px 24px;
+
+      > p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #344055;
+      }
+
+      > app-button {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__feature {
+    width: 100%;
+    padding: 24px 24px 0;
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 6px;
+    background-color: #f8fafc;
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #344055;
+      }
+
+      > ng-icon {
+        cursor: pointer;
+      }
+    }
+
+    &__feature-col {
+      display: flex;
+      flex-direction: column;
+
+      &__cell {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+        isolation: isolate;
+        position: relative;
+        width: 100%;
+
+        &__content {
+          display: flex;
+          align-items: center;
+          padding: 24px 0px;
+          gap: 16px;
+          border-bottom: 1px solid #e2e8f0;
+          width: 100%;
+          justify-content: space-between;
+          margin: 0 24px;
+          cursor: pointer;
+        }
+
+        &__divider {
+          position: absolute;
+          width: 4px;
+          height: 48px;
+          left: 0px;
+          top: 12px;
+          background-color: #f93939;
+        }
+      }
+    }
+  }
+}
